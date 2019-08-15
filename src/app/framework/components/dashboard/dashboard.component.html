@@ -1,0 +1,84 @@
+
+  <!-- Menu and Content -->
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+      <mat-nav-list class="navl">
+          <h1 [routerLink]="['/dashboard']" class="logo">
+            <span class="word1">CRM</span>
+            <span class="word2">Virtual</span>
+          </h1>
+          <hr>
+          <div class="main">
+
+        <img src="../../../../assets//images/Avatar.png" style="width:140px;height:140px;" class="avatar">
+        <button class="DpBtn"mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+          </button>
+      </div>
+
+        <mat-menu #menu="matMenu" [overlapTrigger]="false">
+          <button mat-menu-item>
+            <mat-icon>account_circle</mat-icon>
+            <span>Profile</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>message</mat-icon>
+            <span>Messages</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>Settings</span>
+          </button>
+          <button (click)="logout()" mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon>
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+
+        <hr>
+        <mat-list-item class="link-3"  [routerLink]="['./users']">
+          <mat-icon   matListIcon>verified_user</mat-icon>
+          <h3  matLine>Users</h3>
+          <!--<p matLine></p>-->
+        </mat-list-item>
+        <mat-list-item class="link-3"  [routerLink]="['./users/new']">
+          <mat-icon   matListIcon>people</mat-icon>
+          <h3  matLine>New-User</h3>
+          <!--<p matLine></p>-->
+        </mat-list-item>
+        <mat-list-item class="link-3"  [routerLink]="['./Contacts']">
+          <mat-icon   matListIcon>contacts</mat-icon>
+          <h3  matLine>Contacts</h3>
+          <!--<p matLine></p>-->
+        </mat-list-item>
+
+
+
+        <!--<mat-list-item [routerLink]="['/summaries']">
+          <mat-icon matListIcon>folder</mat-icon>
+          <h3 matLine>Summaries</h3>
+        </mat-list-item>-->
+
+        <mat-list-item  class="link-3" [routerLink]="['./toDo']">
+          <mat-icon class="Nav-List" matListIcon>done</mat-icon>
+          <h3  matLine>To-do</h3>
+        </mat-list-item>
+
+        <mat-list-item class="link-3"  [routerLink]="['./Timeline']">
+          <mat-icon class="Nav-List" matListIcon>timeline</mat-icon>
+          <h3 matLine>TimeLine</h3>
+        </mat-list-item>
+
+
+        <mat-list-item class="link-3"  [routerLink]="['./Calendar']">
+          <mat-icon class="Nav-List" matListIcon>calendar_today</mat-icon>
+          <h3 matLine>Calendar</h3>
+        </mat-list-item>
+
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet>
+      </router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>

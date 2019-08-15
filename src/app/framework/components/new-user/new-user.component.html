@@ -1,0 +1,52 @@
+<div class="New-User-container">
+
+    <mat-card class="Matcard">
+      <mat-card-header>
+        <mat-card-title>New-User</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form [formGroup]="form">
+
+          <mat-form-field appearance="outline">
+            <mat-label>Email Address</mat-label>
+            <input matInput placeholder="Email Address" formControlName="Email">
+            <mat-icon matSuffix>email</mat-icon>
+            <mat-error>Please enter a valid email address.</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Name" formControlName="Name">
+
+              <mat-error>Please enter a valid Name</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Number</mat-label>
+                <input matInput placeholder="Number" formControlName="Number">
+                <mat-icon matSuffix>Number</mat-icon>
+                <mat-error>Please enter a valid Number.</mat-error>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                  <mat-label>Department</mat-label>
+                  <input matInput placeholder="Department" formControlName="Department">
+                  <mat-icon matSuffix>Department</mat-icon>
+                  <mat-error>Please select a valid Department.</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Branch</mat-label>
+                    <input matInput placeholder="Email Address" formControlName="Branch">
+                    <mat-icon matSuffix>Branch</mat-icon>
+                    <mat-error>Please choose a valid Branch.</mat-error>
+                  </mat-form-field>
+          <button (click)="Create()" class="matbutton" mat-stroked-button>Create</button>
+
+          <mat-progress-bar [ngClass]="{ visible: loading$ | async }"  mode="indeterminate"></mat-progress-bar>
+
+        </form>
+      </mat-card-content>
+    </mat-card >
+
+  </div>

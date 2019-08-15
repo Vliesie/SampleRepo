@@ -1,0 +1,156 @@
+
+  .example-container {
+    width: 100%;
+    height: calc(100vh - 64px);
+
+  mat-drawer {
+    width: 20vw;
+  }
+}
+
+
+.DpBtn{
+
+  position:absolute;
+    bottom:-25px;
+
+    left: 222px;
+
+
+
+}
+
+.main {
+  align-items: center;
+  width: 182px;
+    height: 121px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-left: 9px;
+    margin-right:0px;
+    display:inline-block;
+    position:relative;
+}
+
+.content a {
+
+}
+
+.navl{
+
+
+}
+
+.link-3 {
+  font-family: Helvetica;
+  transition: 0.4s;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-3:hover {
+  background-color: white;
+  color:#e7001f;
+
+  padding: 24px 10px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
+.logo {
+  text-align: center;
+  font: 32px 'Arial Narrow', sans-serif; color: black;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+}
+
+
+.logo span {
+  position: relative;
+}
+.logo span:before,
+.logo span:after {
+  content: '';
+  position: absolute;
+  border-width: 16px;
+  border-style: solid;
+  border-color: transparent;
+  height: 0;
+  z-index: 10;
+}
+
+
+.logo .word1 {
+  color: red;
+  margin:5px;
+
+  display: inline-block;
+  z-index: 10;
+}
+
+
+
+.logo .word2 {
+  z-index: 0;
+}
+.logo .word2:after {
+  border-width: 12px;
+
+  right: -4px;
+  bottom: 1px;
+  border-bottom-color: gray;
+  border-right-color: gray;
+}
+.avatar{
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
+  width: 40%;
+}
+
+hr{
+
+  color: black;
+  size: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#matMenu{
+
+}
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}

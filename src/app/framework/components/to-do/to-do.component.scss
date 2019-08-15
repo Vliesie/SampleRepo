@@ -1,0 +1,131 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body{
+ padding: 0;
+ margin: 0;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+form{
+ max-width: 26em;
+ margin: 4em auto;
+ position: relative;
+ background: #f4f4f4;
+ padding: 2em 3em;
+}
+form h1{
+    font-family: "Raleway";
+    color:Red;
+}
+form input[type=text]::placeholder{
+   font-family: "Raleway";
+   color:#666;
+}
+form .data{
+    margin-top: 1em;
+}
+form .data li{
+ background: #fff;
+ border-left: 4px solid red;
+ padding: 1em;
+ margin: 1em auto;
+ color: #666;
+ font-family: "Raleway";
+}
+form .data li i{
+    float: right;
+    color: #888;
+    cursor: pointer;
+}
+form .input-group-text{
+
+
+}
+form .input-group-text i{
+    font-size: 2em;/*Google fonts*/
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+    body{
+     padding: 0;
+     margin: 0;
+    }
+    form{
+     max-width: 30em;
+     margin: 4em auto;
+     position: relative;
+        background: #f4f4f4;
+        padding: 2em 3em;
+        overflow: hidden;
+    }
+    form h1{
+        font-family: "Raleway";
+        color: red;
+    }
+    form input[type=text]::placeholder{
+       font-family: "Raleway";
+       color:#666;
+
+    }
+    form .data{
+        margin-top: 1em;
+    }
+    form .data li{
+     background: #fff;
+     border-left: 4px solid Red;
+
+     color: #666;
+     font-family: "Raleway";
+    }
+    form .data li i{
+        float: right;
+        color: #888;
+        cursor: pointer;
+    }
+    form .input-group-text{
+        background: Red;
+        border-radius: 50%;
+        color: #fff;
+        position: absolute;
+
+        cursor: pointer;
+    }
+    form .input-group-text i{
+        font-size: 2em;
+    }
+    form .form-control{
+     height: 3em;
+        font-family: "Raleway";
+    }
+    form .form-control:focus{
+     box-shadow: 0;
+    }
+}
+form .form-control{
+ height: 3em;
+    font-family: "Raleway";
+}
+form .form-control:focus{
+ box-shadow: 0;
+}

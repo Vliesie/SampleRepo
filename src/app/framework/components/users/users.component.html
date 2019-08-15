@@ -1,0 +1,33 @@
+
+
+
+
+
+  <table class="container">
+    <thead>
+      <tr class="Headerchange">
+        <th class="column1"> Name </th>
+        <th class="column2">Email </th>
+        <th class="column3"> Number</th>
+        <th class="column4"> Location </th>
+        <th class="column5"> Department </th>
+        <th class="column6"> </th>
+
+      </tr>
+    </thead>
+    <tbody *ngFor="let user of users$ | async">
+      <tr>
+        <td>{{user.Name}}</td>
+        <td>{{user.Email}}</td>
+        <td>{{user.Number}}</td>
+        <td>{{user.location}}</td>
+        <td>{{user.Department}}</td>
+        <button [routerLink]="['./',user.id]" class="btn-pill">
+            <span>Edit</span>
+          </button>
+      </tr>
+    </tbody>
+  </table>
+
+
+

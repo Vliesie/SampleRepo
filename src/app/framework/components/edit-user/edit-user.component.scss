@@ -1,0 +1,45 @@
+.Matcard{
+  background-color: #FFFFFF;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  position: relative;
+  margin: 15px;
+}
+
+.matbutton{
+
+   margin: 8px;
+   padding: 2px, 2px , 2px, 2px;
+}
+
+
+div.Edit-User-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  mat-card {
+    max-width: 600px;
+
+    form {
+      margin-top: 20px;
+    }
+
+    mat-form-field, button {
+      width: 100%;
+    }
+
+    mat-progress-bar {
+      -webkit-transition: all 0.4s ease 0s;
+      -moz-transition: all 0.4s ease 0s;
+      //-ms-transition: all 0.4s ease 0s;
+      -o-transition: all 0.4s ease 0s;
+      transition: all 0.4s ease 0s;
+      opacity: 0;
+
+      &.visible { opacity: 1; }
+    }
+  }
+}
